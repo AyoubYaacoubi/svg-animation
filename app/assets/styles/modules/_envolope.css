@@ -1,5 +1,7 @@
 .envolope {
-  // svg basics - layout:
+  padding: 0px 30px;
+
+  /* svg basics - layout: */
   .cls-1 {
     fill: none;
   }
