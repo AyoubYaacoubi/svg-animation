@@ -1,0 +1,48 @@
+.sun {
+  display: block;
+  height: 100%;
+  padding: 15px;
+
+  &--basics {
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 10px;
+  }
+
+  &.moon {
+    .sun__path {
+      d: path(
+        "M193.25,100A93.25,93.25,0,0,1,100,193.25c-51.5,0,17.77-41.75,17.77-93.25S48.5,6.75,100,6.75A93.25,93.25,0,0,1,193.25,100Z"
+      );
+      transform: rotate(40deg) scale(0.8);
+      stroke: rgba(112, 128, 144, 0.94);
+      stroke-width: 10px;
+    }
+    .sun__radiations {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+
+  &__path {
+    stroke: #f2784b;
+    stroke-width: 13px;
+    transition: all 700ms ease;
+    transform: rotate(0deg) scale(0.69);
+    @mixin transformFix;
+  }
+
+  &__radiations {
+    transition: all 700ms ease;
+    @mixin transformFix;
+  }
+
+  &__radiation {
+    fill: none;
+    stroke: #f2784b;
+    stroke-miterlimit: 10;
+    stroke-width: 10px;
+    stroke-linecap: round;
+  }
+}

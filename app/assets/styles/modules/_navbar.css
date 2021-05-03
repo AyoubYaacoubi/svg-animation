@@ -1,0 +1,29 @@
+.navbar {
+  display: inline-block;
+  height: 100%;
+  margin-right: 30px;
+
+  ul {
+    height: 100%;
+    @mixin clearFix;
+  }
+
+  li {
+    float: left;
+    list-style: none;
+    padding: 0px 10px;
+    height: 100%;
+    @mixin flexCenterItems;
+    transition: all 233ms ease-in-out;
+    outline: none;
+    &:hover {
+      background: $medGray;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+}

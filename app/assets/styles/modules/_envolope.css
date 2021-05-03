@@ -1,0 +1,63 @@
+.envolope {
+  // svg basics - layout:
+  .cls-1 {
+    fill: none;
+  }
+
+  .cls-2,
+  .cls-7 {
+    fill: #c6dd7f;
+  }
+
+  .cls-2,
+  .cls-3,
+  .cls-4 {
+    mix-blend-mode: multiply;
+  }
+
+  .cls-3,
+  .cls-5 {
+    fill: #e9ddb7;
+  }
+
+  .cls-4,
+  .cls-6 {
+    fill: #a6d0e4;
+  }
+
+  .cls-8 {
+    fill: #f7f7f7;
+  }
+
+  .cls-9 {
+    fill: #4d4d4d;
+  }
+
+  .cls-10 {
+    fill: #f9b862;
+  }
+
+  .cls-11 {
+    fill: #666;
+  }
+
+  .cls-12 {
+    fill: #6383f7;
+  }
+
+  .cls-13 {
+    fill: #a0a0a0;
+  }
+
+  .cls-14 {
+    fill: url(#Alyssa);
+  }
+
+  .cls-15 {
+    fill: gray;
+  }
+
+  .cls-16 {
+    fill: #bdccd4;
+  }
+}

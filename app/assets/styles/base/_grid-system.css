@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 10px;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 90px 0px 30px 0;
+
+  @mixin atSmall {
+    grid-gap: 15px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.33);
+    /* height: 200px; */
+    overflow: hidden;
+
+    &:hover {
+      background: rgba(232, 232, 232, 1);
+      & .grid__title {
+        transform: scale(1.23);
+      }
+    }
+    @mixin atSmall {
+      height: auto;
+    }
+  }
+
+  &__svg {
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.66) 0%,
+      rgba(232, 232, 232, 0.66) 100%
+    );
+    height: 75%;
+    @mixin flexCenterItems;
+  }
+
+  &__title {
+    @mixin flexCenterItems;
+    background: $medGray;
+    color: white;
+    height: 25%;
+    transition: transform 400ms ease-out;
+  }
+}

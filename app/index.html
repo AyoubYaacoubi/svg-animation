@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>SVG - ANIMATION</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="burger-menu"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--  -->
+    <div class="wrapper wrapper--med-at-atSmall">
+      <main class="grid">
+        <div class="grid__item">
+          <div class="grid__svg sun-cntr">
+            <svg
+              class="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 200 200"
+            >
+              <path
+                class="sun--basics sun__path"
+                d="M193.25,100A93.25,93.25,0,0,1,100,193.25C48.5,193.25,6.39,151.5,6.39,100S48.5,6.75,100,6.75A93.25,93.25,0,0,1,193.25,100Z"
+              />
+              <g class="sun__radiations">
+                <g>
+                  <line
+                    class="sun__radiation"
+                    class="cls-2"
+                    x1="137.3"
+                    y1="13.91"
+                    x2="131.08"
+                    y2="28.19"
+                  />
+                  <line
+                    class="sun__radiation"
+                    class="cls-2"
+                    x1="13.74"
+                    y1="62.52"
+                    x2="28.01"
+                    y2="68.74"
+                  />
+                  <line
+                    class="sun__radiation"
+                    class="cls-2"
+                    x1="62.34"
+                    y1="186.09"
+                    x2="68.56"
+                    y2="171.81"
+                  />
+                  <line
+                    class="sun__radiation"
+                    class="cls-2"
+                    x1="185.91"
+                    y1="137.48"
+                    x2="171.63"
+                    y2="131.26"
+                  />
+                </g>
+                <g>
+                  <line
+                    class="sun__radiation"
+                    class="cls-2"
+                    x1="187.19"
+                    y1="65.63"
+                    x2="172.7"
+                    y2="71.33"
+                  />
+                  <line
+                    class="sun__radiation"
+                    class="cls-2"
+                    x1="65.45"
+                    y1="12.63"
+                    x2="71.15"
+                    y2="27.12"
+                  />
+                  <line
+                    class="sun__radiation"
+                    class="cls-2"
+                    x1="12.45"
+                    y1="134.37"
+                    x2="26.94"
+                    y2="128.67"
+                  />
+                  <line
+                    class="sun__radiation"
+                    class="cls-2"
+                    x1="134.19"
+                    y1="187.37"
+                    x2="128.49"
+                    y2="172.88"
+                  />
+                </g>
+              </g>
+              <!-- <path
+                d="M193.25,100A93.25,93.25,0,0,1,100,193.25c-71.42,0,21.84-12.05,21.84-93.25,0-84.89-98.17-93.25-21.84-93.25A93.25,93.25,0,0,1,193.25,100Z"
+              /> -->
+            </svg>
+          </div>
+          <div class="grid__title">Moon&Sun</div>
+        </div>
+        <div class="grid__item arrow-right-cntr">
+          <div class="grid__svg">
+            <svg
+              class="arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 200 200"
+            >
+              <g>
+                <circle
+                  class="arrow__ellipse arrow--basic"
+                  cx="100"
+                  cy="100"
+                  r="93.99"
+                />
+                <circle
+                  class="arrow__ellipse arrow__ellipse--fill arrow__ellipse-right--fill arrow--fill arrow--basic"
+                  cx="100"
+                  cy="100"
+                  r="93.99"
+                />
+                <g>
+                  <g>
+                    <polygon
+                      class="arrow__polygon arrow--basic arrow--rounded"
+                      points="116.41 100 50.16 48.83 50.16 151.17 116.41 100"
+                    />
+                    <polygon
+                      class="arrow__polygon arrow__polygon--fill arrow__polygon-right--fill arrow--fill arrow--basic arrow--rounded"
+                      points="116.41 100 50.16 48.83 50.16 151.17 116.41 100"
+                    />
+                  </g>
+                  <g>
+                    <polyline
+                      class="arrow__path arrow--basic arrow--rounded arrow__path-right--transition"
+                      points="83.59 151.17 149.84 100 83.59 48.83"
+                    />
+                    <polyline
+                      class="arrow__path arrow--basic arrow--rounded"
+                      points="83.59 151.17 149.84 100 83.59 48.83"
+                    />
+                    <polyline
+                      class="arrow__path arrow__path--fill arrow__path-right--fill arrow--fill arrow--basic arrow--rounded"
+                      points="83.59 151.17 149.84 100 83.59 48.83"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="grid__title">Rigth Arrow</div>
+        </div>
+        <div class="grid__item arrow-left-cntr">
+          <div class="grid__svg">
+            <svg
+              class="arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 200 200"
+            >
+              <g>
+                <circle
+                  class="arrow__ellipse arrow--basic"
+                  cx="100"
+                  cy="100"
+                  r="93.99"
+                />
+                <circle
+                  class="arrow__ellipse arrow__ellipse--fill arrow__ellipse-left--fill arrow--fill arrow--basic"
+                  cx="100"
+                  cy="100"
+                  r="93.99"
+                />
+                <g>
+                  <g>
+                    <polygon
+                      class="arrow__polygon arrow--basic arrow--rounded"
+                      points="83.59 100 149.84 48.83 149.84 151.17 83.59 100"
+                    />
+                    <polygon
+                      class="arrow__polygon arrow__polygon--fill arrow__polygon-left--fill arrow--fill arrow--basic arrow--rounded"
+                      points="83.59 100 149.84 48.83 149.84 151.17 83.59 100"
+                    />
+                  </g>
+                  <g>
+                    <polyline
+                      class="arrow__path arrow--basic arrow--rounded arrow__path-left--transition"
+                      points="116.41 151.17 50.16 100 116.41 48.83"
+                    />
+                    <polyline
+                      class="arrow__path arrow--basic arrow--rounded"
+                      points="116.41 151.17 50.16 100 116.41 48.83"
+                    />
+                    <polyline
+                      class="arrow__path arrow__path--fill arrow__path-left--fill arrow--fill arrow--basic arrow--rounded"
+                      points="116.41 151.17 50.16 100 116.41 48.83"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="grid__title">Left Arrow</div>
+        </div>
+        <div class="grid__item sign-cntr">
+          <div class="grid__svg">
+            <svg
+              id="sign"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 197.86 138.61"
+            >
+              <path
+                data-name="sign"
+                class="sign sign--basics"
+                d="M2.07,123.8c3.75,6.25,12.7,8,19.38,5s11.21-9.43,13.66-16.3,3.13-14.22,4.23-21.43,2.73-14.54,6.77-20.61C49,66.26,54,62.45,59,65a8.68,8.68,0,0,1,4,4.53c1.62,3.94.95,8.14.15,12.18a207.24,207.24,0,0,1-9.44,33.13c-1.23,3.26-2.57,6.62-2,10.15a7.85,7.85,0,0,0,1.62,3.79c3.17,3.91,8,2.27,10.46-.76,1.82-2.19,2.69-5,3.53-7.7-3.27,1.64-4.18,6.53-1.9,9.41a7.29,7.29,0,0,0,9.85,1,8.38,8.38,0,0,0,2.11-10,61.41,61.41,0,0,1-14.55,44,10.11,10.11,0,0,1-5,3.31c-6.54,1.7-9.39-5.13-7.8-10,1.25-3.8,4.36-6.65,7.35-9.31L89.59,120c-4.37-2.24-10.83,4.1-5.67,8.79a6.28,6.28,0,0,0,4.61,1.74c4.76-.33,7-6.15,4.92-10a8.15,8.15,0,0,0-9.75-3.39,8.66,8.66,0,0,0,15.65-2L97,124a4,4,0,0,0,4.82,5,9,9,0,0,0,3.59-1.69,9.47,9.47,0,0,0,3.37-9c-2.64,2-2.23,6.58.31,8.75s6.39,2.22,9.47.93,5.54-3.71,7.79-6.19a99.8,99.8,0,0,0,22.66-42c1-3.81,1.47-8.57-2.17-10.78a6.35,6.35,0,0,0-5.92-.19c-3.89,1.78-5.67,5.65-7.16,9.38a146.71,146.71,0,0,0-9.9,41.84c-.37,4.35,0,9.67,4,11.61A6.92,6.92,0,0,0,135.6,130c3.32-3.29,3.55-8.13,2.82-12.49-1.82-.55-2.92,2.48-1.64,3.88s3.44,1.44,5.34,1.37l33.63-1.21c4.3-.16,8.68-.33,12.73-1.79s7.78-4.45,9-8.57c1.75-5.83-2.07-12.18-7.3-15.29s-11.53-3.72-17.6-4.16a553.33,553.33,0,0,0-106,2.57c-9.46,1.14-19.26,2.5-28.33-.42C22.91,89,13.3,70.86,17.57,55.34S39.12,29.2,54.93,32.2s28,19,26.88,35c-1.62-3.27,2.38-7.33,5.92-6.42s5.38,5.28,4.4,8.8c-1.23,4.45-5.56,7.15-9,10.26S77,88.25,79.64,92c2.17-2.76.67-6.92-1.71-9.5s-5.54-4.46-7.36-7.46-1.71-7.53,1.22-9.49,7.93,1.21,6.53,4.45"
+                transform="translate(-1.07 -30.69)"
+              />
+            </svg>
+          </div>
+          <div class="grid__title">Sign</div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__svg">hi</div>
+          <div class="grid__title">item</div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__svg">hi</div>
+          <div class="grid__title">item</div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__svg">hi</div>
+          <div class="grid__title">item</div>
+        </div>
+        <div class="grid__item">
+          <div class="grid__svg">hi</div>
+          <div class="grid__title">item</div>
+        </div>
+      </main>
+    </div>
+    <!--  -->
+    <footer class="footer"></footer>
+  </body>
+</html>

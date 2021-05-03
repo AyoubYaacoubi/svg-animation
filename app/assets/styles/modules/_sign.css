@@ -1,0 +1,17 @@
+.sign {
+  &--basics {
+    fill: none;
+    stroke: #d94141;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+  }
+
+  &__clone {
+    stroke: rgba(112, 128, 144, 0.94);
+  }
+}
+
+#sign {
+  padding: 15px;
+}

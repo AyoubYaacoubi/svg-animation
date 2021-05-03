@@ -1,0 +1,67 @@
+.arrow {
+  display: block;
+  padding: 30px;
+  height: 100%;
+
+  &-right-cntr {
+    &:hover {
+      .arrow__ellipse-right--fill,
+      .arrow__polygon-right--fill,
+      .arrow__path-right--fill {
+        opacity: 1;
+        stroke-dashoffset: 0 !important;
+      }
+    }
+  }
+  &-left-cntr {
+    &:hover {
+      .arrow__ellipse-left--fill,
+      .arrow__polygon-left--fill,
+      .arrow__path-left--fill {
+        opacity: 1;
+        stroke-dashoffset: 0 !important;
+      }
+    }
+  }
+
+  &--basic {
+    fill: none;
+    stroke-width: 10px;
+    stroke: rgba(112, 128, 144, 0.94);
+    transition: all 1s ease;
+    @mixin transformFix;
+  }
+  &--rounded {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &__ellipse {
+    stroke-miterlimit: 10;
+    &--fill {
+      stroke: #d94141;
+      opacity: 0;
+    }
+  }
+
+  &__polygon {
+    &--fill {
+      stroke: #d94141;
+      opacity: 0;
+    }
+  }
+
+  &__path {
+    &--fill {
+      stroke: #d94141;
+      opacity: 0;
+      transition: all 450ms ease;
+    }
+    &-right--transition {
+      stroke: #d94141;
+    }
+    &-left--transition {
+      stroke: #d94141;
+    }
+  }
+}

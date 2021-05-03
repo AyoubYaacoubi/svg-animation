@@ -1,0 +1,56 @@
+/* media query: */
+@define-mixin atSmall {
+  @media (min-width: 560px) {
+    @mixin-content;
+  }
+}
+@define-mixin atMedium {
+  @media (min-width: 800px) {
+    @mixin-content;
+  }
+}
+@define-mixin atLarge {
+  @media (min-width: 1010px) {
+    @mixin-content;
+  }
+}
+/* centering elements: */
+@define-mixin center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@define-mixin flexCenterItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@define-mixin svgCenter {
+  x: 50%;
+  y: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+@define-mixin svgTxtCenter {
+  x: 50%;
+  y: 50%;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+/* clear fix */
+@define-mixin clearFix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* transform fix for svgs: */
+@define-mixin transformFix {
+  transform-origin: center center;
+  transform-fill: fill-box;
+}
