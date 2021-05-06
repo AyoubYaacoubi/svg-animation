@@ -6,27 +6,28 @@
     padding: 0px 30px;
     &:hover {
       .envolope__tonge {
+        &-shadow {
+          transition: opacity 11ms 500ms;
+          opacity: 0;
+        }
         &-path {
-          transform: translate(-7.8%, -50%);
+          transform: translate(-7.6%, -50%);
           transition: all 500ms ease;
-          &-1 {
-            d: path(
-              "M15.42,49.5,96.15,7.27a8.45,8.45,0,0,1,7.71,0L184.59,49.5Z"
-            );
-          }
-          &-2 {
-            d: path(
-              "M100,6.84a7.75,7.75,0,0,1,3.62.88L182.55,49H17.45L96.38,7.72A7.78,7.78,0,0,1,100,6.84m0-1a8.88,8.88,0,0,0-4.09,1L13.38,50H186.62L104.09,6.83a8.88,8.88,0,0,0-4.09-1Z"
-            );
-          }
+          d: path("M13.38,50,98.15,12.82a4.67,4.67,0,0,1,3.7,0L186.62,50Z");
         }
       }
       .envolope__letter {
         transition: all 500ms 500ms ease;
-        position: relative;
-        z-index: 100;
         transform: translateY(-40%);
       }
+    }
+  }
+
+  &__tonge {
+    &-path {
+      stroke: gray;
+      stroke-with: 1px;
+      stroke-linejoin: round;
     }
   }
 
