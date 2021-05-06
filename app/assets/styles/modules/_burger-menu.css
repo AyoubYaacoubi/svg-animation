@@ -1,0 +1,27 @@
+.burger-menu {
+  &__circle {
+    /* r: 100%; */
+  }
+
+  &__lines {
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    stroke-width: 5px;
+  }
+  &__line1 {
+    transform: translateY(-16px);
+    /* transform: translateY(-16px) rotate(32deg); */
+    transform-box: fill-box;
+    transform-origin: left center;
+  }
+  &__line2 {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  &__line3 {
+    transform: translateY(16px);
+    /* transform: translateY(16px) rotate(-32deg); */
+    transform-box: fill-box;
+    transform-origin: left center;
+  }
+}

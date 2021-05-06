@@ -52,5 +52,5 @@
 /* transform fix for svgs: */
 @define-mixin transformFix {
   transform-origin: center center;
-  transform-fill: fill-box;
+  transform-box: fill-box;
 }
