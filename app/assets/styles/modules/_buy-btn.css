@@ -1,0 +1,68 @@
+.buy-btn {
+  display: inline-block;
+  position: relative;
+  @mixin flexCenterItems;
+  /* background: #666; */
+  padding: 0.66rem;
+  &:hover {
+    .buy-btn__icon {
+      border-radius: 50%;
+      color: white;
+      &:nth-child(2) {
+        margin-left: 5px;
+      }
+      &:nth-child(1) {
+        margin-right: 5px;
+      }
+    }
+    .buy-btn__label {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+  }
+
+  &__icon {
+    /* size & positioning: */
+    display: inline-block;
+    padding: 0.88rem;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    @mixin flexCenterItems;
+
+    /* typography: */
+    font-size: 1.1rem;
+    text-align: center;
+    color: transparent;
+    background: #070707;
+    /* otherstyle: */
+    overflow: hidden;
+    transition: all 500ms ease;
+    @mixin atSmall {
+      cursor: pointer;
+    }
+
+    &:nth-child(2) {
+      border-radius: 0px 50% 50% 0px;
+      margin-left: -5px;
+    }
+    &:nth-child(1) {
+      border-radius: 50% 0px 0px 50%;
+      margin-left: -5px;
+    }
+
+    &:hover {
+      color: $mainRed !important;
+      background: $stGray;
+    }
+  }
+
+  &__label {
+    color: white;
+    font-size: 1.3rem;
+    @mixin center;
+    opacity: 1;
+    transition: all 200ms ease;
+  }
+}
