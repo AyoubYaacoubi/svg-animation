@@ -47,5 +47,6 @@
     color: white;
     height: 25%;
     transition: transform 400ms ease-out;
+    z-index: 2;
   }
 }

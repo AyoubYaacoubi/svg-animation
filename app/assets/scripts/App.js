@@ -67,3 +67,8 @@ const sunEl = document.querySelector(".sun")
 //   sunEl.classList.toggle("moon")
 // })
 new ToggleClass(["moon"], [sunEl], [sunTrigger], "click")
+
+// burger menu:
+const burger1Trigger = document.querySelector(".burger-menu__cntr")
+const burger1El = document.querySelector(".burger-menu")
+new ToggleClass(["burger-menu--active"], [burger1El], [burger1Trigger], "click")
