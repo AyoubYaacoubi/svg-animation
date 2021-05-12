@@ -23,6 +23,11 @@ import CloneSvg from "./modules/_CloneSvg"
 // @vars:    ([classes], [elements], [triggers], action)
 import ToggleClass from "./modules/_ToggleClass"
 
+// @desc:     animate spinner "basic: rotate every spinner class" and doing more with special spinners
+// @vars:    ** /** */
+import Spinner from "./modules/_Spinner"
+
+new Spinner()
 // accept the module hot if it makes sense.
 if (module.hot) {
   module.hot.accept()
