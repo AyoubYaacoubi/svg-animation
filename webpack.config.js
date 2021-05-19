@@ -78,7 +78,7 @@ if (currentTask == "dev") {
     },
     contentBase: path.resolve(__dirname, "./app"),
     hot: true,
-    port: 3000,
+    port: 3300,
     host: "0.0.0.0",
   }
   // which mode:
@@ -114,7 +114,11 @@ if (currentTask == "build") {
     splitChunks: {chunks: "all"},
   }
   // pushing the needed plugins:
-  config.plugins.push(new CleanWebpackPlugin(), new MiniCssExtractPlugin({filename: "style.[chunkhash].css"}), new RunAfterCompile())
+  config.plugins.push(
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({filename: "style.[chunkhash].css"}),
+    new RunAfterCompile()
+  )
 }
 
 // export every thing:

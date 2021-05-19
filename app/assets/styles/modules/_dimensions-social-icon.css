@@ -1,0 +1,97 @@
+.dimensions-social-icon {
+  transform: rotate(-30deg) skew(30deg);
+
+  &__cookie {
+    height: 70px;
+    width: 70px;
+    @mixin flexCenterItems;
+    position: relative;
+    cursor: pointer;
+    /* background: $stGray; */
+
+    &:hover {
+      span {
+        background: $ltGray;
+      }
+      /* &:before {
+        background: $ltGray;
+      }
+      &:after {
+        background: $ltGray;
+      } */
+      span {
+        &.icon-layer {
+          transform: translate(40px, -40px);
+          opacity: 1;
+          .fa-duotone {
+            /* --fa-primary-color: white;
+            --fa-secondary-color: white; */
+            --fa-primary-color: saddlebrown;
+            --fa-secondary-color: burlywood;
+          }
+        }
+        &:nth-child(4) {
+          transform: translate(30px, -30px);
+          opacity: 0.8;
+        }
+        &:nth-child(3) {
+          transform: translate(20px, -20px);
+          opacity: 0.6;
+        }
+        &:nth-child(2) {
+          transform: translate(10px, -10px);
+          opacity: 0.4;
+        }
+        &:first-child {
+          transform: translate(0px, -0px);
+          opacity: 0.2;
+        }
+      }
+    }
+
+    &:before {
+      content: "";
+      height: 8px;
+      width: 100%;
+      background: $stGray;
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      transform-origin: top;
+      transform: skewX(-50deg);
+      /* border-left: 0.5px solid $stGray; */
+    }
+    &:after {
+      content: "";
+      height: 100%;
+      width: 10px;
+      background: $stGray;
+      position: absolute;
+      top: 0;
+      left: -10px;
+      transform-origin: right;
+      transform: skewY(-40deg);
+    }
+
+    span {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: $stGray;
+      @mixin flexCenterItems;
+      transition: all 0.4s ease;
+    }
+
+    /* icon layer */
+    span.icon-layer {
+      font-size: 2.4rem;
+      .fa-duotone {
+        --fa-primary-color: white;
+        --fa-secondary-color: white;
+        /* --fa-primary-color: saddlebrown;
+        --fa-secondary-color: burlywood; */
+        transition: all 0.4s ease;
+      }
+    }
+  }
+}

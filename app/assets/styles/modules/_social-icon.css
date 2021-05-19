@@ -10,6 +10,7 @@
     height: 100px;
     width: 100px;
     overflow: hidden;
+    cursor: pointer;
 
     &:hover .social-icon__bg {
       transform: translate(-00%, -00%);
