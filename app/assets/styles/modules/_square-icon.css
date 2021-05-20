@@ -1,0 +1,121 @@
+.square-icon {
+  position: relative;
+  cursor: pointer;
+
+  /* hover:starts here */
+
+  &__container {
+    width: 140px;
+    height: 140px;
+    @mixin flexCenterItems;
+
+    &:hover {
+      .square-icon__cntr {
+        /* transition */
+        margin: 0.7rem;
+        width: 50px;
+        height: 50px;
+
+        .fa-duotone {
+          opacity: 1;
+        }
+      }
+      .square-icon__alien {
+        border-radius: 50% 50% 50% 50%;
+      }
+      .square-icon__bat {
+        border-radius: 50% 50% 50% 50%;
+      }
+      .square-icon__biohazard {
+        border-radius: 50% 50% 50% 50%;
+      }
+      .square-icon__book {
+        border-radius: 50% 50% 50% 50%;
+      }
+      .square-icon__mark {
+        z-index: -3;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.6);
+        transform-origin: center center;
+      }
+    }
+  }
+
+  /* hover:ends here */
+
+  &__cntr {
+    position: absolute;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    @mixin flexCenterItems;
+    background: $ltGray;
+    transition: all 0.5s ease;
+    /* transition */
+    /* margin: 0.7rem;
+    width: 50px;
+    height: 50px; */
+
+    &:hover {
+      background: $stGray;
+      .fa-duotone {
+        color: $ltGray;
+      }
+    }
+
+    .fa-duotone {
+      opacity: 0;
+      transition: all 0.5s ease;
+      /* transition */
+      /* opacity: 1; */
+    }
+  }
+
+  .fa-duotone {
+    font-size: 2rem;
+    color: $stGray;
+  }
+
+  &__alien {
+    top: 0;
+    left: 0;
+    border-radius: 0 0 50% 0;
+    /* transition */
+    /* border-radius: 50% 50% 50% 50%; */
+  }
+  &__bat {
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 50%;
+    /* transition */
+    /* border-radius: 50% 50% 50% 50%; */
+  }
+  &__biohazard {
+    bottom: 0;
+    right: 0;
+    border-radius: 50% 0 0 0;
+    /* transition */
+    /* border-radius: 50% 50% 50% 50%; */
+  }
+  &__book {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 50% 0 0;
+    /* transition */
+    /* border-radius: 50% 50% 50% 50%; */
+  }
+  &__mark {
+    /* @mixin center; */
+    @mixin flexCenterItems;
+    @mixin center;
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    /* transition */
+    /* opacity: 0;
+    transform: translate(-50%, -50%) scale(1.6);
+    transform-origin: center center; */
+  }
+}
