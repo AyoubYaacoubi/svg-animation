@@ -1,8 +1,12 @@
 $mainBlack: #070707;
-$mainColor2: #111111;
+$mainPurple: #705e78;
 /* Color Theme Swatches in Hex */
 $stGray: #262526;
 $medGray: #404040;
 $ltGray: #8c8979;
 $mainNeutral: #f2f2f2;
 $mainRed: #f60a20;
+
+$moon: #a5aaa3;
+$sun: #fea443;
+$sunRadiation: #f3feb0;

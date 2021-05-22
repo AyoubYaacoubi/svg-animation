@@ -1,0 +1,17 @@
+.toggle-theme {
+  background: $mainPurple;
+  height: 70px;
+  width: 70px;
+  border-radius: 15px;
+  padding: 10px;
+  &__moon {
+    fill: $moon;
+    transform: translate(-0.54%, -0.54%) rotate(30deg);
+    /* @mixin svgTR */
+  }
+
+  &__sun {
+    fill: $sun;
+    transform: translate(-0.54%, -0.54%);
+  }
+}
