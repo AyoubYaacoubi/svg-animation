@@ -26,8 +26,11 @@ import ToggleClass from "./modules/_ToggleClass"
 // @desc:     animate spinner "basic: rotate every spinner class" and doing more with special spinners
 // @vars:    ** /** */
 import Spinner from "./modules/_Spinner"
+import Dot from "./modules/_Dot"
 
 new Spinner()
+
+new Dot()
 // accept the module hot if it makes sense.
 if (module.hot) {
   module.hot.accept()
