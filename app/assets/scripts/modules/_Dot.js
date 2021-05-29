@@ -5,41 +5,38 @@ class Dot {
     this.dot = document.querySelector(".dot")
     this.dotCntr = document.querySelector(".dot__cntr")
     this.bgCntr = document.querySelector(".grid__svg")
-    this.count =
-      (this.bgCntr.offsetHeight / this.dot.offsetHeight) *
-      (this.bgCntr.offsetWidth / this.dot.offsetWidth)
-    console.log(this.count)
+    // this.numOfDots =
+    //   (this.bgCntr.clientHeight / this.dot.offsetHeight) *
+    //   (this.bgCntr.clientWidth / this.dot.offsetWidth)
+    this.numOfDots = 109
     this.cloneDot()
     this.dots = document.querySelectorAll(".dot")
-    console.log(this.dots)
 
     this.events()
   }
   events() {
-    this.dots.forEach((dot) => {
-      dot.addEventListener("click", () => this.stagger())
+    this.dots.forEach((dot, i) => {
+      dot.addEventListener("click", (e) => this.stagger(i))
     })
   }
 
-  stagger(el) {
+  stagger(index) {
+    console.log(index)
     return anime({
       targets: this.dots,
       scale: [
-        {value: 0.1, easing: "easeOutSine", duration: 500},
+        {value: 0.4, easing: "easeOutSine", duration: 500},
         {value: 1, easing: "easeInOutQuad", duration: 1200},
       ],
       delay: anime.stagger(200, {
-        grid: [
-          this.bgCntr.offsetHeight / this.dot.offsetHeight,
-          this.bgCntr.offsetWidth / this.dot.offsetWidth,
-        ],
-        from: "center",
+        grid: [11, 10],
+        from: index,
       }),
     })
   }
 
   cloneDot() {
-    const dotsCount = Math.round(this.count)
+    const dotsCount = Math.round(this.numOfDots)
     for (let i = 0; i < dotsCount; i++) {
       let clone = this.dot.cloneNode(true)
       this.dotCntr.appendChild(clone)
