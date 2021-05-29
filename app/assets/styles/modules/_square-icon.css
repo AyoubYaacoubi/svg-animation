@@ -1,6 +1,8 @@
 .square-icon {
   position: relative;
-  cursor: pointer;
+  @mixin atSmall {
+    cursor: pointer;
+  }
 
   /* hover:starts here */
 
