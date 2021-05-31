@@ -1,0 +1,22 @@
+.card {
+  @mixin flexCenterItems;
+  flex-direction: column;
+  width: 140px;
+  background: #000;
+  &__el {
+    @mixin flexCenterItems;
+    width: 100%;
+    min-height: 40px;
+    background: #777;
+  }
+  &__img-cntr {
+    flex-basis: 2;
+    background: red;
+  }
+  &__social-bar {
+    background: green;
+  }
+  &__btn-cntr {
+    background: blue;
+  }
+}
