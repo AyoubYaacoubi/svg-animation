@@ -42,14 +42,13 @@ class Dot {
   }
 
   stagger(index) {
-    console.log(index)
     return anime({
       targets: this.dots,
       scale: [
-        {value: 0.4, easing: "easeOutSine", duration: 500},
-        {value: 1, easing: "easeInOutQuad", duration: 1200},
+        {value: 0.4, easing: "easeOutSine", duration: 300},
+        {value: 1, easing: "easeInOutQuad", duration: 600},
       ],
-      delay: anime.stagger(200, {
+      delay: anime.stagger(100, {
         // grid: [this.rows, this.columns],
         grid: [11, 10],
         from: index,
@@ -58,6 +57,7 @@ class Dot {
   }
 
   cloneDot() {
+    console.log(this.numOfDots)
     const dotsCount = Math.round(this.numOfDots)
     for (let i = 0; i < dotsCount; i++) {
       let clone = this.dot.cloneNode(true)

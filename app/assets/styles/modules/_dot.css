@@ -1,6 +1,7 @@
 .dot {
   width: 20px;
   height: 20px;
+  position: relative;
   @mixin flexCenterItems;
   border-radius: 50%;
   &:hover:before {
