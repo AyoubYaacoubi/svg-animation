@@ -2,21 +2,73 @@
   @mixin flexCenterItems;
   flex-direction: column;
   width: 140px;
-  background: #000;
+  height: 180px;
+  box-shadow: -2px 3px 35px -2px rgba(184, 141, 184, 1);
+  border-radius: 15px;
+  overflow: hidden;
+  background: $mainNeutral;
   &__el {
     @mixin flexCenterItems;
     width: 100%;
-    min-height: 40px;
-    background: #777;
   }
-  &__img-cntr {
-    flex-basis: 2;
-    background: red;
+  &__img {
+    &-cntr {
+      flex: 5;
+      border-bottom: 2px solid $sun;
+      position: relative;
+      background: url("./assets/images/dragon-card.jpg") center no-repeat;
+      background-size: cover;
+    }
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $sun;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    @mixin flexCenterItems;
+    font-size: 1.4rem;
+    color: $sun;
+    background: $stGray;
   }
   &__social-bar {
-    background: green;
+    flex-direction: row;
+    margin-top: 20px;
+    flex: 2;
+    & div {
+      flex: 1;
+      height: 100%;
+      border-right: 1px solid $medGray;
+      @mixin flexCenterItems;
+      /* &:first-child {
+        background: red;
+      } */
+      &:last-child {
+        border: none;
+      }
+    }
   }
-  &__btn-cntr {
-    background: blue;
+  &__btn {
+    &-cntr {
+      flex: 2;
+    }
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: $medGray;
+    @mixin flexCenterItems;
+    height: 20px;
+    width: 50px;
+    font-size: 0.7rem;
+    color: #fff;
+    transition: all 199ms ease;
+    @mixin atSmall {
+      cursor: pointer;
+    }
+    &:hover {
+      background: #fff;
+      border-color: $mainBlack;
+      color: $mainBlack;
+    }
   }
 }
