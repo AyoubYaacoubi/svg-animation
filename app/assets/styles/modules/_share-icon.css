@@ -1,5 +1,90 @@
 .share-icon {
   background: $mainRed;
-  height: 100px;
-  width: 400px;
+  height: 80px;
+  width: 200px;
+  display: flex;
+
+  &__show {
+    flex: 3;
+    background: #fff;
+    position: relative;
+    perspective: 500px;
+    &-center {
+      width: 30px;
+      height: 30px;
+      /* background: $mainBlack; */
+      @mixin center;
+      @mixin flexCenterItems;
+      font-size: 1.7rem;
+    }
+    &-icon {
+      opacity: 0;
+      transform: translate(-50%, -50%) rotateX(0deg);
+      /* hover:  translate(-50%, -50%) rotateX(180deg) and opacity:0; */
+    }
+    &-msg {
+      transform: translate(-50%, -50%) rotateX(180deg);
+      /* hover:  translate(-50%, -50%) rotateX(0deg) and opacity:1; */
+    }
+  }
+
+  &__face {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: #fbba08;
+    position: relative;
+    &-smile {
+      transform: translate(-100%, -100%);
+      /* hover: translate(10%, 10%) */
+    }
+    &-sprised {
+      transform: translate(250%, 140%);
+      /* hover: translate(136%, 15%) */
+      .share-icon__mouth {
+        border-radius: 50%;
+        width: 15px;
+      }
+    }
+  }
+
+  &__eye {
+    height: 8px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
+    background: $mainBlack;
+    top: 20%;
+    &-left {
+      left: 20%;
+    }
+    &-right {
+      right: 20%;
+    }
+  }
+
+  &__mouth {
+    width: 25px;
+    height: 15px;
+    border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $mainBlack;
+  }
+
+  &__typo {
+    flex: 4;
+    @mixin flexCenterItems;
+    background: #000;
+    & span {
+      font-weight: 500;
+      font-size: 1.5rem;
+      font-style: italic;
+      color: $ltGray;
+      transform: translateY(200%);
+      /* hover: translateY(0%) */
+    }
+  }
 }
