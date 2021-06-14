@@ -8,6 +8,10 @@
   font-size: 3rem;
   position: relative;
 
+  @mixin atSmall {
+    cursor: pointer;
+  }
+
   &:before,
   &:after {
     content: "";

@@ -1,0 +1,33 @@
+.anime-txt {
+  font-size: 1.9rem;
+  margin: 2px;
+  color: #d3d3d3;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 $mainBlack, 1px -1px 0 $mainBlack,
+    -1px 1px 0 $mainBlack, 1px 1px 0 $mainBlack;
+  position: relative;
+  @mixin atSmall {
+    cursor: pointer;
+  }
+
+  &-cntr:hover .anime-txt:after {
+    width: 100%;
+  }
+
+  &:after {
+    content: "LOVE DESIGN";
+    color: coral;
+    text-shadow: none;
+    left: 0;
+    top: 0;
+    width: 0;
+    overflow: hidden;
+    border-right: 5px solid coral;
+    position: absolute;
+    white-space: nowrap;
+    transition: width 0.8s cubic-bezier(0.32, 0.01, 0.99, 0.89);
+    /* animation: moveTxt 2s cubic-bezier(0.32, 0.01, 0.99, 0.89) infinite
+      alternate both; */
+  }
+}
