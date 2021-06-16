@@ -1,0 +1,34 @@
+.liquid {
+  width: 120px;
+  height: 180px;
+  background: darkGray;
+  border: 5px solid darkGray;
+  border-top: none;
+  position: relative;
+  overflow: hidden;
+
+  &-cntr {
+    &:hover .liquid:before {
+      transform: translate(-50%, -50%) rotate(500deg);
+    }
+  }
+
+  &:after {
+    content: "H2O";
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    @mixin center;
+  }
+  &:before {
+    content: "";
+    width: 240px;
+    height: 240px;
+    background: DodgerBlue;
+    border-radius: 36%;
+    @mixin center;
+    transform: translate(-50%, 39%);
+    transition: all 3s ease-in-out;
+    z-index: 2;
+  }
+}
