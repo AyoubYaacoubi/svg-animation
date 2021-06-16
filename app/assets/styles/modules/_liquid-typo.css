@@ -1,0 +1,19 @@
+.liquid-typo {
+  position: relative;
+  width: 200px;
+  height: 100px;
+
+  &:before {
+    content: "";
+  }
+
+  &:after {
+    content: "LIQUID";
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: -2px -2px 0 $mainBlack, 2px -2px 0 $mainBlack,
+      -2px 2px 0 $mainBlack, 2px 2px 0 $mainBlack;
+    @mixin center;
+  }
+}
