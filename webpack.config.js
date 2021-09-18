@@ -53,7 +53,7 @@ let pages = fse
 
 // global configs for the build and the development proccess: path: "./app/assets/scripts/App.js"
 let config = {
-  entry: "./App/assets/scripts/App.js",
+  entry: "./app/assets/scripts/App.js",
 
   module: {
     rules: [cssConfig],
